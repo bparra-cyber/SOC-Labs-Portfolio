@@ -4,4 +4,4 @@ Welcome to my hands-on portfolio demonstrating core enterprise networking princi
 
 | Lab Environment | Core Concepts Tested | Link |
 | :--- | :--- | :--- |
-| **Lab 1: Basic LAN Infrastructure & ICMP Analysis** | Layer 2 Switching, Static IPv4 Subnetting, Media Selection, STP Verification | [View Lab Documentation](./Lab1.md) |
+| **Lab 1: Basic LAN Infrastructure & ICMP Analysis** | Layer 2 Switching, Static IPv4 Subnetting, Media Selection, STP Verification | [View Lab Documentation](./Basic LAN Infrastructure & ICMP Analysis.md) |
