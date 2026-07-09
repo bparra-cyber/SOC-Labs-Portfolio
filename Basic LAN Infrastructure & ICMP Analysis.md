@@ -17,4 +17,4 @@ Configure a basic Local Area Network (LAN) infrastructure and verify connectivit
     *   The test successfully transmitted 4 ICMP Echo Request packets and received 4 corresponding Echo Replies from `192.168.1.20`.
     *   **0% packet loss** confirms a completely stable physical and logical path across the Layer 2 access switch.
     *   Round-trip times averaged `0ms`, indicative of local hardware-switched traffic with negligible propagation delay.
-<img width="550" alt="image" src="https://github.com/user-attachments/assets/180f3dbe-f2ac-481e-83dc-180e22a732a7" />
+<img width="750" alt="image" src="https://github.com/user-attachments/assets/180f3dbe-f2ac-481e-83dc-180e22a732a7" />
