@@ -6,7 +6,7 @@ Introduce a default gateway to allow communication outside of the local network 
 ### Topology Changes
 - Added a Cisco 1941 Router (`bp-Router0`).
 - Connected `bp-Switch1` (port `Fa0/3`) to `bp-Router0` (port `Gig0/0`) using a Copper Straight-Through cable.
-<img width="905" height="645" alt="image" src="https://github.com/user-attachments/assets/12671275-5645-4408-93d8-7d9dba4a9589" />
+<img width="905"  alt="image" src="https://github.com/user-attachments/assets/12671275-5645-4408-93d8-7d9dba4a9589" />
 
 ### Interface Configuration
 ```ciscolog
