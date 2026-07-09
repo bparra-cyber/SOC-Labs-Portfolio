@@ -1,4 +1,7 @@
+## Lab 1: Basic LAN Infrastructure & ICMP Analysis
 
+### Objective
+Configure a basic Local Area Network (LAN) infrastructure and verify connectivity using ICMP analysis.
 
 ### Step 1: Physical Layer Setup (Topology)
 *   **Hardware Selection:** Deployed two End Devices (bparra0 and bparra1) and connected them to a Cisco Catalyst 2960 Layer 2 switch. Chosen because it represents standard enterprise hardware rather than a generic simulation device.
