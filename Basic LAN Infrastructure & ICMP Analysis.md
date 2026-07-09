@@ -12,3 +12,4 @@
     *   The test successfully transmitted 4 ICMP Echo Request packets and received 4 corresponding Echo Replies from `192.168.1.20`.
     *   **0% packet loss** confirms a completely stable physical and logical path across the Layer 2 access switch.
     *   Round-trip times averaged `0ms`, indicative of local hardware-switched traffic with negligible propagation delay.
+<img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/642a56b4-ddc2-4ce5-b54b-858790a7a1bc" />
