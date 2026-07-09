@@ -17,6 +17,6 @@ Router(config-if)#ip address 192.168.1.254 255.255.255.0
 Router(config-if)#no shutdown
 ```
 
-<img width="645" height="938" alt="image" src="https://github.com/user-attachments/assets/56d03d97-7c37-4892-b0d2-0a5cddbfd38c" />
+<img width="645"  alt="image" src="https://github.com/user-attachments/assets/56d03d97-7c37-4892-b0d2-0a5cddbfd38c" />
 
 
