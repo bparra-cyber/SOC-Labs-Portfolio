@@ -14,4 +14,7 @@ Router#configure terminal
 Router(config)#interface GigabitEthernet0/0
 Router(config-if)#ip address 192.168.1.254 255.255.255.0
 Router(config-if)#no shutdown
-<img width="698" height="932" alt="image" src="https://github.com/user-attachments/assets/69a8f8a0-4d9f-482b-852d-cd8259ed29c4" />
+```
+
+<img width="1887" height="901" alt="image" src="https://github.com/user-attachments/assets/01846198-1702-41da-ad1e-cfc010fc62a1" />
+
