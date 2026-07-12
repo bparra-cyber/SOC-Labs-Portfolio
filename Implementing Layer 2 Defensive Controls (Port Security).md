@@ -11,7 +11,7 @@ To implement and verify physical layer defense mechanisms at the Data Link layer
 ### Interface Configuration & Threat Detection Logs
 The switch CLI was configured to enforce port access constraints. Upon simulating an attack by swapping the authorized laptop for an unauthorized host (`bparra0`) and attempting an ICMP ping, the interface immediately generated real-time syslog alerts and dropped the link.
 
-Switch Port Security Configuration and Syslog Logs![alt text](images/image.png)
+Switch Port Security Configuration and Syslog Logs! [alt text](images/image.png)
 ### Verification & Visual Link State
 As shown below, the unauthorized communication attempt forced port `Fa0/1` into an administrative `err-disabled` shutdown state, completely isolating the host from the gateway (indicated by the solid red link lights).
 
