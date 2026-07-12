@@ -11,12 +11,12 @@ To implement and verify physical layer defense mechanisms at the Data Link layer
 ### Interface Configuration & Threat Detection Logs
 The switch CLI was configured to enforce port access constraints. Upon simulating an attack by swapping the authorized laptop for an unauthorized host (`bparra0`) and attempting an ICMP ping, the interface immediately generated real-time syslog alerts and dropped the link.
 
-![Switch Port Security Configuration and Syslog Logs](images/image_598e39.png)
+![Switch Port Security Configuration and Syslog Logs](image_598e39.png)
 
 ### Verification & Visual Link State
 As shown below, the unauthorized communication attempt forced port `Fa0/1` into an administrative `err-disabled` shutdown state, completely isolating the host from the gateway (indicated by the solid red link lights).
 
-![Port Security Violation and Link Shutdown](images/image_598d23.png)
+![Port Security Violation and Link Shutdown](image_598d23.png)
 
 ### SOC Analyst Takeaway
 As a Tier 1 SOC Analyst, these specific log signatures (`%PORT_SECURITY-2-PSECURE_VIOLATION`) are critical. In an enterprise environment, these strings are forwarded directly to a SIEM platform (like Splunk or Wazuh) via Syslog. Analysts utilize these exact event details to pinpoint the compromised switch, the physical port location, and the rogue MAC address to initiate incident response protocols.
