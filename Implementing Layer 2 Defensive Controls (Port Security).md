@@ -15,8 +15,7 @@ Switch Port Security Configuration and Syslog Logs! [alt text](images/image.png)
 ### Verification & Visual Link State
 As shown below, the unauthorized communication attempt forced port `Fa0/1` into an administrative `err-disabled` shutdown state, completely isolating the host from the gateway (indicated by the solid red link lights).
 
-Port Security Violation and Link Shutdown!
-[alt text](images/image-1.png) ![alt text](images/image-2.png)
+Port Security Violation and Link Shutdown![alt text](images/image-1.png) ![alt text](images/image-2.png)
 
 ### SOC Analyst Takeaway
 For a Tier 1 SOC Analyst, these specific log signatures (`%PORT_SECURITY-2-PSECURE_VIOLATION`) are critical. In an enterprise environment, these strings are forwarded directly to a SIEM platform (like Splunk or Wazuh) via Syslog. Analysts utilize these exact event details to pinpoint the compromised switch, the physical port location, and the rogue MAC address to initiate incident response protocols.
