@@ -55,20 +55,20 @@ interface FastEthernet0/3
 ### Phase 1: Identifying Out-of-Order ACL Parsing Logic
 The lab initially failed because a broad `permit any` rule was evaluated before a specific `deny host` statement inside Access Control List 10. Due to Cisco's "First Match Wins" architecture, the router skipped the block completely. Furthermore, attempts to ping resulted in an absolute `Request timed out`, pointing to an infrastructure routing error deeper in the network.
 
-![alt text](image.png)
+![alt text](image9.png)
 
 *Figure 1: Router CLI highlighting incorrect ACL rule sorting order and subsequent host ICMP timeout drops.*
 
 ### Phase 2: Verifying Router Subinterface Status
 Running the `show ip interface brief` command revealed that while the primary physical interface `GigabitEthernet0/0` had an assigned IP, the subinterface managing the new segment (`GigabitEthernet0/0.20`) was currently `unassigned`. This meant packets had no router-side gateway interface to communicate with.
 
-![alt text](image-1.png)  
+![alt text](image10.png)  
 *Figure 2: Router configuration state revealing an unassigned IP on the virtual VLAN 20 interface.*
 
 ### Phase 3: Enforcing Dot1Q Encapsulation Order of Operations
 When attempting to force-assign an IP to the virtual subinterface, Cisco IOS rejected the command, stating that IP routing on a LAN subinterface is only allowed once it has been configured as part of a VLAN. The router must be told how to trunk using 802.1Q tagging protocol before it can hold a logical network address.
 
-![alt text](image-2.png)
+![alt text](image11.png)
 
 *Figure 3: Cisco IOS command rejection warning requiring explicit VLAN encapsulation sequencing.*
 
